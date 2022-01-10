@@ -181,8 +181,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4))
-    url(../homework-4/img/maine.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../homework5/img/maine.jpg);
 
   max-width: 1600px;
   min-height: 600px;
@@ -396,32 +400,31 @@ img {
   margin-left: 10px;
 }
 
-.li-command-link a {
-  display: block;
+.command-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
-
   background: #ffffff;
-
+  color: #afb1b8;
   box-sizing: border-box;
   border-radius: 50%;
   border: 1px;
 }
-.li-command-link a:hover {
+.command-link:hover {
   background: #2196f3;
+  color: #ffffff;
 }
-.command-svg:hover {
-  fill: currentColor;
+.command-link:focus {
+  background: #2196f3;
+  color: #ffffff;
 }
 
 .command-svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* секция 5 */
@@ -438,36 +441,30 @@ img {
 .clients-li + .clients-li {
   margin-left: 30px;
 }
-.clients-li a {
-  display: block;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border: 1px solid #afb1b8;
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
   box-sizing: border-box;
   border-radius: 4px;
+  color: #afb1b8;
+  background-color: #ffffff;
 }
 
 .svg-clients {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-
-.clients-li a:hover {
-  border: solid #2196f3;
-}
-.svg-clients :hover {
   fill: currentColor;
 }
 
-.clients-li a:focus {
-  border: solid #2196f3;
+.clients-link:hover {
+  color: #2196f3;
 }
-.svg-clients :focus {
-  fill: currentColor;
+.clients-link:focus {
+  color: #2196f3;
 }
 
 /* подвал */
@@ -541,16 +538,17 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-li a {
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
+
   border-radius: 50%;
   border: 0px;
   background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 .footer-adress {
   margin-bottom: 9px;
@@ -558,17 +556,18 @@ img {
 .footer-mail {
   margin-bottom: 9px;
 }
-.footer-li :hover {
-  background: #2196f3;
-}
-.footer-li :focus {
-  background: #2196f3;
-}
+
 .footer-li + .footer-li {
   margin-left: 10px;
 }
 .footer-svg {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: currentColor;
+}
+.footer-link:hover {
+  background-color: #2196f3;
+}
+.footer-link:focus {
+  background-color: #2196f3;
 }

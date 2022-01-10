@@ -387,16 +387,17 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-li a {
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
+
   border-radius: 50%;
   border: 0px;
   background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 .footer-adress {
   margin-bottom: 9px;
@@ -404,17 +405,18 @@ img {
 .footer-mail {
   margin-bottom: 9px;
 }
-.footer-li :hover {
-  background: #2196f3;
-}
-.footer-li :focus {
-  background: #2196f3;
-}
+
 .footer-li + .footer-li {
   margin-left: 10px;
 }
 .footer-svg {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: currentColor;
+}
+.footer-link:hover {
+  background-color: #2196f3;
+}
+.footer-link:focus {
+  background-color: #2196f3;
 }
