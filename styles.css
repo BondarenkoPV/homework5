@@ -166,6 +166,14 @@ img {
 .header .studio {
   color: #2196f3;
 }
+.studio ::after {
+  content: k;
+  background: #2196f3;
+  width: 48px;
+  height: 4px;
+
+  border-radius: 2px;
+}
 
 /* Секция герой */
 .hero-section {
@@ -407,7 +415,7 @@ img {
   background: #2196f3;
 }
 .command-svg:hover {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .command-svg {
@@ -448,14 +456,14 @@ img {
   fill: #afb1b8;
 }
 
-.clients-li:hover {
+.clients-li a:hover {
   border: solid #2196f3;
 }
 .svg-clients :hover {
   fill: currentColor;
 }
 
-.clients-li :focus {
+.clients-li a:focus {
   border: solid #2196f3;
 }
 .svg-clients :focus {
