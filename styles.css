@@ -166,13 +166,21 @@ img {
 .header .studio {
   color: #2196f3;
 }
-.studio ::after {
-  content: k;
-  background: #2196f3;
-  width: 48px;
-  height: 4px;
+/* underline */
+.underline-studio{
+  position: relative;
+}
 
-  border-radius: 2px;
+.underline-studio::after {
+  content:"";
+  position: absolute;
+  right: 0%;
+  bottom: -32px;
+ 
+ width: 48px;
+ height: 4px;
+ border-radius: 2px;
+ background-color:#2196f3 ;
 }
 
 /* Секция герой */
@@ -186,7 +194,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../homework5/img/maine.jpg);
+    url(../img/maine.jpg);
 
   max-width: 1600px;
   min-height: 600px;
