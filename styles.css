@@ -175,7 +175,7 @@ img {
   content:"";
   position: absolute;
   right: 0%;
-  bottom: -32px;
+  bottom: -33px;
  
  width: 48px;
  height: 4px;
@@ -271,12 +271,24 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: 0px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  padding: 15px;
+background-image: url(../../img/x.svg);
+fill: black;
+
+background-repeat: no-repeat;
+background-position: 50% 50%;
+background-size: 11px 11px;
+}
 
  
-}
+
 
 /* секция 2 */
 .section-description {
