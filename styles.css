@@ -101,6 +101,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header + .link-header {
@@ -167,15 +170,15 @@ img {
   color: #2196f3;
 }
 /* underline */
-.underline-studio{
+.studio{
   position: relative;
 }
 
-.underline-studio::after {
+.studio::after {
   content:"";
   position: absolute;
   right: 0%;
-  bottom: -33px;
+  bottom: -2px;
  
  width: 48px;
  height: 4px;
@@ -379,6 +382,31 @@ background-size: 11px 11px;
 .ul-our-work-section :nth-child(3) {
   margin-right: 0px;
 }
+     /* линия с текстом  */
+     .box-work-section{
+      position: relative;
+     }
+     .conteiner-for-text{
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      bottom: 0%;
+      background: rgba(47, 48, 58, 0.8);
+      padding-top: 27px;
+      padding-bottom: 27px;
+     }
+
+
+     .text-work-section{
+      font-family: Roboto;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 14px;
+       line-height: 16px;
+       text-align: center; 
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       color: #FFFFFF;}
 
 /* секция 4 */
 .section-command {
@@ -472,6 +500,12 @@ background-size: 11px 11px;
   box-sizing: border-box;
   border-radius: 50%;
   border: 1px;
+  transition-property: backgroud, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .command-link:hover {
   background: #2196f3;
@@ -513,6 +547,9 @@ background-size: 11px 11px;
   border-radius: 4px;
   color: #afb1b8;
   background-color: #ffffff;
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-clients {
@@ -610,6 +647,9 @@ background-size: 11px 11px;
   border: 0px;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress {
   margin-bottom: 9px;
