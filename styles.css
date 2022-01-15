@@ -298,6 +298,8 @@ img {
 }
 .conteiner-description {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -411,6 +413,8 @@ img {
 }
 .conteiner-section-command {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -522,9 +526,12 @@ img {
   display: flex;
   list-style: none;
 }
-.regular-cliets > .conteiner-our-work-section {
+.conteiner-our-work-section {
+  width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .clients-li + .clients-li {
@@ -565,6 +572,8 @@ img {
 }
 .conteiner-footer {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
